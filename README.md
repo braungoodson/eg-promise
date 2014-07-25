@@ -1,7 +1,7 @@
-jta-template
+eg-promise
 ======
 
-jquery, twitter, and angularjs template. with express server.
+Example promise with services and controllers.
 
 usage
 ======
