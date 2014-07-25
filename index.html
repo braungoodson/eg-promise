@@ -8,7 +8,10 @@
 		<link rel="stylesheet" type="text/css" href="bower_components/twitter/dist/css/bootstrap-theme.min.css" />
 		<link rel="stylesheet" type="text/css" href="index.css" />
 	</head>
-<body>
+<body ng-controller="BoxsController">
+	<div class="list-group">
+		<a class='list-group-item' ng-repeat="box in boxs track by $index" href="#">Box #: {{$index+1}}, Box Volume: {{box.volume}}</a>
+	</div>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/twitter/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
